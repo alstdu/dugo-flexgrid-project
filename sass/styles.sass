@@ -29,13 +29,20 @@ nav
     justify-content: center
     align-items: center
     max-height: min-content
+    width: 1500px
     img
         margin: .25em
         .clickable
             cursor: pointer
     #main-image
-        height: 300px
+        object-fit: cover
+        height: 400px
+        width: 1000px
         filter: drop-shadow(0 0 2px black)
+
+#next-btn, #prev-btn
+    &:hover
+        filter: drop-shadow(0 0 1px purple)
 
 .card-container
     display: grid
