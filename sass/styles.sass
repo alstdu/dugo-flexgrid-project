@@ -1,5 +1,11 @@
+$body-background: #430D4B
+$header-background: #210435
+$card-background: #7B337E
+
 body
+    background-color: $body-background
     margin: 0
+    color: white
     h1,h2
         text-align: center
 
@@ -11,7 +17,7 @@ nav
     margin: 0
     margin-bottom: -7em
     height: 15em
-    background-color: purple
+    background-color: $header-background
     ul
         display: flex
         flex-direction: row-reverse
@@ -29,41 +35,41 @@ nav
     justify-content: center
     align-items: center
     max-height: min-content
-    width: 1500px
-    img
-        margin: .25em
-        .clickable
-            cursor: pointer
     #main-image
         object-fit: cover
         height: 400px
-        width: 1000px
+        width: 1500px
         filter: drop-shadow(0 0 2px black)
 
 #next-btn, #prev-btn
+    margin: .25em
     &:hover
-        filter: drop-shadow(0 0 1px purple)
+        filter: drop-shadow(0 0 1px #F5D5E1)
 
 .card-container
     display: grid
     grid-template-columns: repeat(3, 1fr)
     grid-auto-rows: auto
-    grid-gap: 1rem
+    grid-gap: 5rem
+    margin-left: 1em
+    margin-right: 1em
 
 .card
     display: grid
+    background-color: $card-background
     grid-template-columns: 1fr
     gap: 1rem
-    padding: 1rem
+    padding: 2rem
     margin-bottom: 1em
     border: 1px solid #ddd
     border-radius: 8px
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
 
     .card-image
-        max-width: 100%
-        height: auto
-        border-radius: 4px
+        object-fit: cover
+        width: 100%
+        height: 200px
+        border-radius: 6px
 
     .card-heading
         font-size: 1.25rem
@@ -71,8 +77,8 @@ nav
 
     .card-text
         font-size: 0.875rem
-        color: #777
+        color: white
 
     .card-link
         text-decoration: none
-        color: #007bff
+        color: #F5D5E1
