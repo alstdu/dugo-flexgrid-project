@@ -1,14 +1,16 @@
 body
     margin: 0
+    h1,h2
+        text-align: center
 
 nav
     display: flex
     flex-direction: row
     justify-content: space-between
-    align-items: center
+    align-items: flex-start
     margin: 0
-    bottom: -1em
-    height: 5em
+    margin-bottom: -7em
+    height: 15em
     background-color: purple
     ul
         display: flex
@@ -29,10 +31,11 @@ nav
     max-height: min-content
     img
         margin: .25em
-        img.clickable
+        .clickable
             cursor: pointer
-            #main-image
-                height: 300px
+    #main-image
+        height: 300px
+        filter: drop-shadow(0 0 2px black)
 
 .card-container
     display: grid
@@ -45,6 +48,7 @@ nav
     grid-template-columns: 1fr
     gap: 1rem
     padding: 1rem
+    margin-bottom: 1em
     border: 1px solid #ddd
     border-radius: 8px
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
