@@ -4,40 +4,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physics Peeps Blog</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
- <header>
-    <nav>
-        <img class="logo" src="https://placehold.co/50">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">About Physics Peeps</a></li>
-        </ul>
-    </nav>
- </header>
- <div class="image-slider" id="imageSlider"></div>
- <div class="card-container" id="cardContainer">
-    <div class="card">
-        <img class="card-image" src="https://placehold.co/600x400">
-        <p class="card-heading">blep</p>
-        <p class="card-text">ayo</p>
-        <a class="card-link">linkhere</a>
+    <header>
+        <nav>
+            <img class="logo" src="https://placehold.co/50">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About Physics Peeps</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="image-slider" id="imageSlider">
+        <div class="fa fa-angle-left" style="font-size: 2em;" id="prev-btn"></div>
+        <div><img id="main-image" alt="Main Image" src="https://placehold.co/800x400"></div>
+        <div class="fa fa-angle-right" style="font-size: 2em;" id="next-btn"></div>
     </div>
-    <div class="card">
-        <img class="card-image" src="https://placehold.co/600x400">
-        <p class="card-heading"></p>
-        <p class="card-text"></p>
-        <a class="card-link"></a>
+    <div class="card-container" id="cardContainer">
+        <div class="card">
+            <img class="card-image" src="https://placehold.co/400x200">
+            <p class="card-heading">blep</p>
+            <p class="card-text">ayo</p>
+            <a class="card-link">linkhere</a>
+        </div>
+        <div class="card">
+            <img class="card-image" src="https://placehold.co/400x200">
+            <p class="card-heading"></p>
+            <p class="card-text"></p>
+            <a class="card-link"></a>
+        </div>
+        <div class="card">
+            <img class="card-image" src="https://placehold.co/400x200">
+            <p class="card-heading"></p>
+            <p class="card-text"></p>
+            <a class="card-link"></a>
+        </div>
     </div>
-    <div class="card">
-        <img class="card-image" src="https://placehold.co/600x400">
-        <p class="card-heading"></p>
-        <p class="card-text"></p>
-        <a class="card-link"></a>
-    </div>
- </div>
-<scripts src="./scripts/scripts.js"></scripts>
+    <scripts type="javascript" src="./scripts/scripts.js"></scripts>
 </body>
 </html>
