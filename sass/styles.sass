@@ -6,9 +6,9 @@ body
     background-color: $body-background
     margin: 0
     color: white
-    h1,h2
+    h2
+        font-size: 3rem
         text-align: center
-
 nav
     display: flex
     flex-direction: row
@@ -29,6 +29,7 @@ nav
                 color: white
                 margin: 1em
                 font-size: 1.5em
+                font-family: 'Montserrat', sans-serif
                 &:hover
                     color: #F5D5E1
 .logo
@@ -43,12 +44,13 @@ nav
     max-height: min-content
     #main-image
         object-fit: cover
-        height: 400px
-        width: 1500px
+        max-height: 600px
+        min-width: 70vw
         filter: drop-shadow(0 0 3px black)
 
 #next-btn, #prev-btn
     margin: .25em
+    padding: .25em
     &:hover
         filter: drop-shadow(0 0 1px #F5D5E1)
 
@@ -62,6 +64,7 @@ nav
 
 .card
     display: grid
+    height: 40em
     background-color: $card-background
     grid-template-columns: 1fr
     gap: 1rem
@@ -78,13 +81,14 @@ nav
         border-radius: 6px
 
     .card-heading
-        font-size: 1.25rem
+        font-size: 2rem
         margin: 0
 
     .card-text
-        font-size: 0.875rem
+        font-size: 1.5rem
         color: white
 
     .card-link
+        font-size: 1.5rem
         text-decoration: none
         color: #F5D5E1
