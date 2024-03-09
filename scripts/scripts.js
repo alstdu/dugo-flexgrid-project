@@ -64,7 +64,7 @@ hamburgerMenu.addEventListener( 'click', () => {
     document.querySelector( '.nav-sidebar' ).style.display = 'block';
 } );
 
-document.querySelector( '#foo' ).addEventListener( 'click', () => {
+document.querySelector( '#closeMenuBtn' ).addEventListener( 'click', () => {
     document.querySelector( '.nav-open-overlay' ).style.display = 'none';
     document.querySelector( '.nav-sidebar' ).style.display = 'none';
 } );
