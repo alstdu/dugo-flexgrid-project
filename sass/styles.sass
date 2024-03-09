@@ -21,8 +21,8 @@ nav
     margin-bottom: -7em
     height: 15em
     background-color: $header-background
-    ul
-        display: flex
+    ul.desktop-nav
+        display: none // flex when visible
         flex-direction: row-reverse
         flex-wrap: wrap
         flex-grow: 1
@@ -97,6 +97,39 @@ nav
         text-decoration: none
         color: #F5D5E1
 
-@media screen and ( min-width: 886px )
+.menu-icon
+    padding: 0.5em
+    font-size: 3em
+
+.nav-content-wrapper
+    overflow-y: scroll
+    max-height: 100vh
+
+.nav-open-overlay
+    display: none
+    background-color: rgba(0, 0, 0, 0.5)
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+.nav-sidebar
+    display: none
+    overflow-y: scroll
+    background-color: red
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 500px // todo: something else for width
+
+// desktop styles
+@media screen and ( min-width: 920px )
     .card-container 
         grid-template-columns: repeat(3, 1fr)
+
+    nav ul.desktop-nav
+        display: flex
+
+    .menu-icon
+        display: none
