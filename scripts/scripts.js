@@ -58,4 +58,15 @@ window.addEventListener( 'load', () => {
     startAutoRotation();
 } );
 
+const hamburgerMenu = document.querySelector( '.menu-icon' );
+hamburgerMenu.addEventListener( 'click', () => {
+    document.querySelector( '.nav-open-overlay' ).style.display = 'block';
+    document.querySelector( '.nav-sidebar' ).style.display = 'block';
+} );
+
+document.querySelector( '#foo' ).addEventListener( 'click', () => {
+    document.querySelector( '.nav-open-overlay' ).style.display = 'none';
+    document.querySelector( '.nav-sidebar' ).style.display = 'none';
+} );
+
 // Lexi Dugo A01348881 2024
