@@ -11,7 +11,8 @@ body
         font-size: 3rem
         text-align: center
         font-family: "Roboto Mono", monospace
-nav
+
+header
     display: flex
     flex-direction: row
     flex-wrap: wrap
@@ -21,7 +22,7 @@ nav
     margin-bottom: -7em
     height: 15em
     background-color: $header-background
-    ul.desktop-nav
+    nav.desktop-nav ul
         display: none // flex when visible
         flex-direction: row-reverse
         flex-wrap: wrap
@@ -36,6 +37,7 @@ nav
                 font-family: "Roboto Mono", monospace
                 &:hover
                     color: #F5D5E1
+
 .logo
     height: 150px
     width: 150px
@@ -116,11 +118,12 @@ nav
 
 .nav-sidebar
     display: none
-    overflow-y: scroll
+    overflow-y: auto
     background-image: linear-gradient($card-background, #000000)
     position: absolute
     top: 0
     bottom: 0
+    right: 0
     width: 500px // todo: something else for width
     #closeMenuBtn
         background: none
@@ -128,13 +131,23 @@ nav
         font-size: 3em
         color: white
         margin: .5em
+    nav ul li
+        list-style: none
+        a
+            text-decoration: none
+            color: white
+            margin: 1em
+            font-size: 1.5em
+            font-family: "Roboto Mono", monospace
+            &:hover
+                color: #F5D5E1
 
 // desktop styles
-@media screen and ( min-width: 920px )
+@media screen and ( min-width: 930px )
     .card-container 
         grid-template-columns: repeat(3, 1fr)
 
-    nav ul.desktop-nav
+    header nav.desktop-nav ul
         display: flex
 
     .menu-icon
