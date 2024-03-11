@@ -64,9 +64,12 @@ hamburgerMenu.addEventListener( 'click', () => {
     document.querySelector( '.nav-sidebar' ).style.display = 'block';
 } );
 
-document.querySelector( '#closeMenuBtn' ).addEventListener( 'click', () => {
+const closeNav = () => {
     document.querySelector( '.nav-open-overlay' ).style.display = 'none';
     document.querySelector( '.nav-sidebar' ).style.display = 'none';
-} );
+};
+
+document.querySelector( '#closeMenuBtn' ).addEventListener( 'click', closeNav );
+document.querySelector( '.nav-open-overlay' ).addEventListener( 'click', closeNav );
 
 // Lexi Dugo A01348881 2024
