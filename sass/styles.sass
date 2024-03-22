@@ -5,7 +5,7 @@
 $body-background: #000
 $header-background: #2d132e
 $card-background: #7b337e
-    
+
 body
     background-color: $body-background
     margin: 0
@@ -49,24 +49,25 @@ header
     display: block
     margin: 0 auto
 
+.scrolling-bar
+    width: 100%
+    overflow: hidden
+    white-space: nowrap
+    box-sizing: border-box
+    background-color: $card-background
 
-// .image-slider
-//     display: flex
-//     flex-direction: row
-//     justify-content: center
-//     align-items: center
-//     max-height: min-content
-//     #main-image
-//         object-fit: cover
-//         max-height: 600px
-//         max-width: 70vw
-//         filter: drop-shadow(0 0 3px black)
+.scrolling-text
+    font-size: 2em
+    display: inline-block
+    padding-left: 100%
+    animation: scroll-text 10s linear infinite
 
-// #next-btn, #prev-btn
-//     margin: .25em
-//     padding: .25em
-//     &:hover
-//         filter: drop-shadow(0 0 3px #F5D5E1)
+@keyframes scroll-text
+    from
+        transform: translateX(0)
+
+    to
+        transform: translateX(-100%)
 
 .card-container
     display: grid
@@ -152,7 +153,7 @@ header
 
 // desktop styles
 @media screen and ( min-width: 930px )
-    .card-container 
+    .card-container
         grid-template-columns: repeat(3, 1fr)
 
     header nav.desktop-nav ul
