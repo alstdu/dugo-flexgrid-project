@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 </head>
 <body>
     <div class="nav-content-wrapper">
@@ -22,10 +24,29 @@
                 </ul>
             </nav>
         </header>
-        <div class="image-slider" id="imageSlider">
-            <div class="fa fa-angle-left" style="font-size: 3em;" id="prev-btn"></div>
-            <div><img id="main-image" alt="Main Image" src=""></div>
-            <div class="fa fa-angle-right" style="font-size: 3em;" id="next-btn"></div>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img class="glide-img" src="./images/rocket-full.jpg" alt="">
+                    </li>
+                    <li class="glide__slide">
+                        <img class="glide-img" src="./images/space-full.jpg" alt="">
+                    </li>
+                    <li class="glide__slide">
+                        <img class="glide-img" src="./images/telescope-full.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Previous</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
         </div>
         <h2>Featured Blogs</h2>
         <div class="card-container" id="cardContainer">
@@ -62,6 +83,7 @@
             </ul>
         </nav>
     </div>
-    <script src="./scripts/scripts.js"></script>
+    <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script type="module" src="./scripts/scripts.js"></script>
 </body>
 </html>
