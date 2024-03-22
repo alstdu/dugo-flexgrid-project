@@ -21,4 +21,6 @@ new Glide( '.glide', {
     focusAt: 'center',
 } ).mount( {Autoplay, Controls} );
 
+sal();
+
 // Lexi Dugo A01348881 2024
