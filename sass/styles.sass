@@ -1,3 +1,5 @@
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core"
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme"
 
 $body-background: #000
 $header-background: #2d132e
@@ -42,23 +44,28 @@ header
     height: 150px
     width: 150px
 
-.image-slider
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: center
-    max-height: min-content
-    #main-image
-        object-fit: cover
-        max-height: 600px
-        max-width: 70vw
-        filter: drop-shadow(0 0 3px black)
+.glide-img
+    display: block
+    margin: 0 auto
 
-#next-btn, #prev-btn
-    margin: .25em
-    padding: .25em
-    &:hover
-        filter: drop-shadow(0 0 3px #F5D5E1)
+
+// .image-slider
+//     display: flex
+//     flex-direction: row
+//     justify-content: center
+//     align-items: center
+//     max-height: min-content
+//     #main-image
+//         object-fit: cover
+//         max-height: 600px
+//         max-width: 70vw
+//         filter: drop-shadow(0 0 3px black)
+
+// #next-btn, #prev-btn
+//     margin: .25em
+//     padding: .25em
+//     &:hover
+//         filter: drop-shadow(0 0 3px #F5D5E1)
 
 .card-container
     display: grid
