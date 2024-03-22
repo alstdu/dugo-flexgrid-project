@@ -1,0 +1,6 @@
+{
+  "name": "dugo-flexgrid-project",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0"
+  }
+}
