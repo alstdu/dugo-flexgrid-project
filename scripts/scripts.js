@@ -1,15 +1,5 @@
 import Glide, {Autoplay, Controls} from '../node_modules/@glidejs/glide/dist/glide.modular.esm.js';
 
-const sliderImages = [
-    'rocket', 'space', 'telescope',
-];
-
-const dataBuckets = sliderImages.map( ( sliderImage ) => ( {
-    sliderImage,
-    fullImage: `./images/${sliderImage}-full.jpg`,
-    thumbElement: document.createElement( 'img' ),
-} ) );
-
 const hamburgerMenu = document.querySelector( '.menu-icon' );
 hamburgerMenu.addEventListener( 'click', () => {
     document.querySelector( '.nav-open-overlay' ).style.display = 'block';
